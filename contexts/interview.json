@@ -1,0 +1,27 @@
+{
+  "context_name": "Job Interview",
+  "description": "Evaluated on clarity, confidence, and structured responses.",
+  "weights": {
+    "pitch_stability":    0.15,
+    "speech_rate":        0.10,
+    "energy_consistency": 0.10,
+    "pause_ratio":        0.10,
+    "sentiment_score":    0.15,
+    "keyword_density":    0.20,
+    "clarity_score":      0.20
+  },
+  "thresholds": {
+    "pitch_stability":    { "min": 0.60, "ideal": 0.80, "max": 1.00 },
+    "speech_rate":        { "min": 0.50, "ideal": 0.75, "max": 1.00 },
+    "energy_consistency": { "min": 0.55, "ideal": 0.75, "max": 1.00 },
+    "pause_ratio":        { "min": 0.40, "ideal": 0.65, "max": 1.00 },
+    "sentiment_score":    { "min": 0.55, "ideal": 0.75, "max": 1.00 },
+    "keyword_density":    { "min": 0.50, "ideal": 0.80, "max": 1.00 },
+    "clarity_score":      { "min": 0.60, "ideal": 0.85, "max": 1.00 }
+  },
+  "feedback_templates": {
+    "pitch_stability":    "Pitch variance is {value:.2f}. Interviewers respond well to a steady, grounded tone.",
+    "speech_rate":        "Speaking rate scored {value:.2f}. Aim for 130-150 WPM to sound composed.",
+    "keyword_density":    "Keyword relevance is {value:.2f}. Incorporate role-specific terminology."
+  }
+}

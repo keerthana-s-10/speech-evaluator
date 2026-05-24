@@ -1,0 +1,27 @@
+{
+  "context_name": "Public Speaking",
+  "description": "Evaluated on audience engagement, pacing, and rhetorical impact.",
+  "weights": {
+    "pitch_stability":    0.12,
+    "speech_rate":        0.15,
+    "energy_consistency": 0.18,
+    "pause_ratio":        0.15,
+    "sentiment_score":    0.15,
+    "keyword_density":    0.12,
+    "clarity_score":      0.13
+  },
+  "thresholds": {
+    "pitch_stability":    { "min": 0.50, "ideal": 0.72, "max": 1.00 },
+    "speech_rate":        { "min": 0.50, "ideal": 0.70, "max": 1.00 },
+    "energy_consistency": { "min": 0.60, "ideal": 0.80, "max": 1.00 },
+    "pause_ratio":        { "min": 0.50, "ideal": 0.72, "max": 1.00 },
+    "sentiment_score":    { "min": 0.55, "ideal": 0.78, "max": 1.00 },
+    "keyword_density":    { "min": 0.45, "ideal": 0.70, "max": 1.00 },
+    "clarity_score":      { "min": 0.60, "ideal": 0.82, "max": 1.00 }
+  },
+  "feedback_templates": {
+    "pause_ratio":    "Pause score is {value:.2f}. Strategic pauses emphasize key points and give audiences time to absorb.",
+    "speech_rate":    "Pacing scored {value:.2f}. Vary your rate - slow for emphasis, faster for momentum.",
+    "clarity_score":  "Clarity is {value:.2f}. Enunciate deliberately; projection carries authority."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "context_name": "Idea Pitch",
+  "description": "Evaluated on energy, persuasion, and narrative momentum.",
+  "weights": {
+    "pitch_stability":    0.08,
+    "speech_rate":        0.12,
+    "energy_consistency": 0.20,
+    "pause_ratio":        0.08,
+    "sentiment_score":    0.22,
+    "keyword_density":    0.15,
+    "clarity_score":      0.15
+  },
+  "thresholds": {
+    "pitch_stability":    { "min": 0.45, "ideal": 0.65, "max": 1.00 },
+    "speech_rate":        { "min": 0.55, "ideal": 0.80, "max": 1.00 },
+    "energy_consistency": { "min": 0.65, "ideal": 0.85, "max": 1.00 },
+    "pause_ratio":        { "min": 0.35, "ideal": 0.55, "max": 1.00 },
+    "sentiment_score":    { "min": 0.65, "ideal": 0.88, "max": 1.00 },
+    "keyword_density":    { "min": 0.55, "ideal": 0.78, "max": 1.00 },
+    "clarity_score":      { "min": 0.55, "ideal": 0.80, "max": 1.00 }
+  },
+  "feedback_templates": {
+    "energy_consistency": "Energy consistency scored {value:.2f}. Pitches need dynamic vocal energy to hold attention.",
+    "sentiment_score":    "Sentiment strength is {value:.2f}. Use more emotionally charged, positive language.",
+    "keyword_density":    "Problem/solution keyword density is {value:.2f}. Name the problem and your fix clearly."
+  }
+}
