@@ -16,6 +16,7 @@ from pathlib import Path
 from dataclasses import dataclass
 from typing import Dict
 
+#libraries used for NLP
 import spacy
 from textblob import TextBlob
 
